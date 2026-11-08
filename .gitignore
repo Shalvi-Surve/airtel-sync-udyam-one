@@ -1,0 +1,16 @@
+.env
+.streamlit/secrets.toml
+
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+storage/*.db
+storage/*.sqlite
+
+.DS_Store
+
+# Do not publish potentially identifiable lead data
+data/analytics/smb_leads.csv
