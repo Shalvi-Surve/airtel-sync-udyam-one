@@ -1,0 +1,40 @@
+html, body, [class*="css"] {
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+.stApp { background: #f7f7f8; }
+.block-container { max-width: 1320px; padding: 1.25rem clamp(1rem, 3vw, 2.25rem) 3rem; }
+h1 { font-size: clamp(1.8rem, 3vw, 2.5rem); letter-spacing: -.035em; line-height: 1.12; }
+h2 { letter-spacing: -.02em; }
+h3 { letter-spacing: -.015em; }
+
+[data-testid="stSidebar"] { background: #171717; }
+[data-testid="stSidebar"] * { color: #fff; }
+.brand { font-size: 26px; font-weight: 800; color: #e4002b; letter-spacing: -1px; }
+.hero { background: #171717; color: #fff; border-radius: 20px; padding: clamp(24px, 4vw, 42px); margin: 14px 0 26px; }
+.hero h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.08; color: #fff; }
+.hero p { color: #e1e1e1; max-width: 700px; line-height: 1.65; }
+.eyebrow { color: #e4002b; font-weight: 700; letter-spacing: 1.4px; font-size: 12px; }
+.card { background: #fff; border: 1px solid #e7e7e9; border-radius: 14px; padding: 20px; height: 100%; box-shadow: 0 2px 8px #11111108; }
+.muted { color: #71717a; }
+.step { display: inline-block; padding: 8px 12px; background: #fff; color: #171717; border: 1px solid #eee; border-radius: 20px; margin: 4px; font-weight: 600; }
+div[data-testid="stMetric"] { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 14px; }
+.stButton button { border-radius: 9px; font-weight: 600; min-height: 42px; }
+.stButton button[kind="primary"] { background: #e4002b; border-color: #e4002b; }
+.stButton button[kind="secondary"] { border-color: #dedee2; background: #fff; }
+[data-testid="stSidebar"] .stButton button, [data-testid="stSidebar"] .stButton button * { color: #171717 !important; background-color: #fff; }
+[data-testid="stSidebar"] [data-testid="stSelectbox"] [role="combobox"],
+[data-testid="stSidebar"] [data-testid="stSelectbox"] [role="combobox"] *,
+[data-testid="stSidebar"] [data-testid="stSelectbox"] [data-baseweb="select"] * { color: #171717 !important; }
+[data-testid="stSidebar"] [data-testid="stSelectbox"] [data-baseweb="select"] { background: #fff; }
+button:focus-visible, input:focus-visible, textarea:focus-visible, [role="combobox"]:focus-within { outline: 2px solid #e4002b !important; outline-offset: 2px; }
+.small { font-size: 13px; color: #71717a; }
+div[data-testid="stVerticalBlockBorderWrapper"] { border-radius: 14px !important; border-color: #e6e6e9 !important; background: #fff; }
+
+@media (max-width: 720px) {
+  .block-container { padding: 1rem .85rem 2rem; }
+  .hero { border-radius: 15px; margin: 8px 0 18px; }
+  .step { margin: 3px; padding: 7px 9px; font-size: 13px; }
+  div[data-testid="stMetric"] { padding: 10px; }
+  .brand { font-size: 23px; }
+}

@@ -1,0 +1,5 @@
+"""Shared brand tokens for the UdyamOne Streamlit interface."""
+BRAND_RED = "#E4002B"
+CHARCOAL = "#171717"
+NEUTRAL = "#F7F7F8"
+MUTED = "#71717A"
